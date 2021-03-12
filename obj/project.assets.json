@@ -38,7 +38,7 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
-      "Microsoft.AspNetCore.JsonPatch/5.0.4": {
+      "Microsoft.AspNetCore.JsonPatch/3.1.13": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
@@ -1507,20 +1507,18 @@
         "logo.png"
       ]
     },
-    "Microsoft.AspNetCore.JsonPatch/5.0.4": {
-      "sha512": "Nd/QZhdEX9tvuoz7BmeL6PWmimkpTjZ3MsUtmhP9xEjfGezthI4g3K/ggW/HO53Ow0LnjBx9hZKAcENVPzF2LA==",
+    "Microsoft.AspNetCore.JsonPatch/3.1.13": {
+      "sha512": "0pe/g+H3eTOyGWNcml3QmHev4b4j5Q2OaocgFvoz8vpSeBs48xED4nfs1hCHq3RY9/jYC/oKbyjAOr6DYZ05sA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.jsonpatch/5.0.4",
+      "path": "microsoft.aspnetcore.jsonpatch/3.1.13",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/Microsoft.AspNetCore.JsonPatch.dll",
-        "lib/net461/Microsoft.AspNetCore.JsonPatch.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.xml",
-        "microsoft.aspnetcore.jsonpatch.5.0.4.nupkg.sha512",
+        "microsoft.aspnetcore.jsonpatch.3.1.13.nupkg.sha512",
         "microsoft.aspnetcore.jsonpatch.nuspec"
       ]
     },
@@ -5528,7 +5526,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.1.1",
-      "Microsoft.AspNetCore.JsonPatch >= 5.0.4",
+      "Microsoft.AspNetCore.JsonPatch >= 3.1.13",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 3.1.13",
       "Microsoft.EntityFrameworkCore >= 5.0.4",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.4",
@@ -5578,7 +5576,7 @@
           },
           "Microsoft.AspNetCore.JsonPatch": {
             "target": "Package",
-            "version": "[5.0.4, )"
+            "version": "[3.1.13, )"
           },
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
             "target": "Package",

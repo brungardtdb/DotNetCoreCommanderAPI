@@ -32,6 +32,7 @@ namespace Commander
             services.AddDbContext<CommanderContext>(opt => opt.UseSqlServer
             (Configuration.GetConnectionString("CommanderConnection")));
 
+            // NewtonsoftJson necessary for JSON patch
             services.AddControllers().AddNewtonsoftJson(s => 
             s.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver());
             

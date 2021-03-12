@@ -15,6 +15,9 @@ namespace Commander.Profiles
             CreateMap<CommandCreateDto, Command>();
 
             CreateMap<CommandUpdateDto, Command>();
+
+            CreateMap<Command, CommandUpdateDto>();
+            
         }
     }
 }

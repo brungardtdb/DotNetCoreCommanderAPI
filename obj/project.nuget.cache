@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "uvVffj9c9FrbfVFEaEs7GzEc18LlBhiOjWiw3hoRqjL82xDM/9FPR1COD23qWTDzHEmGDk8+bSsvbmSgG0CInA==",
+  "dgSpecHash": "Kl1PLtYQQXJHR/rltOogkzqtdQ1Bi0p2LfXCVuVUrsnyArEMhlzKDrzQ/tpix3YxFO/NVySgWUJn57eSlZ5sFw==",
   "success": true,
   "projectFilePath": "C:\\core\\CommandRestAPI\\Commander\\Commander.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brung\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\brung\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\brung\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\brung\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.4\\microsoft.aspnetcore.jsonpatch.5.0.4.nupkg.sha512",
+    "C:\\Users\\brung\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.13\\microsoft.aspnetcore.jsonpatch.3.1.13.nupkg.sha512",
     "C:\\Users\\brung\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.13\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.13.nupkg.sha512",
     "C:\\Users\\brung\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\brung\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
