@@ -58,5 +58,22 @@ namespace Commander.Controllers
             // If save failed, return internal server error
             return StatusCode(500);
         }
+
+        //PUT api/commands/{id}
+        [HttpPut("{id:int}")]
+        public ActionResult<CommandUpdateDto> UpdateCommand(int id, CommandUpdateDto commandUpdateDto)
+        {
+            var repoCommandModel = _repository.GetCommandById(id);
+            if(repoCommandModel is null)
+                return NotFound();
+            
+            var command =_mapper.Map(commandUpdateDto, repoCommandModel);
+            _repository.UpdateCommand(command);
+            
+            if(_repository.SaveChanges())
+                return NoContent();
+            
+            return StatusCode(500);
+        }
     }
 }

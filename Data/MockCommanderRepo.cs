@@ -11,8 +11,6 @@ namespace Commander.Data
             if(cmd is null || cmd.HowTo is null || 
             cmd.Line is null || cmd.Platform is null)
                 throw new ArgumentNullException();
-
-            // return new Command{Id=3, HowTo=cmd.HowTo, Line=cmd.Line, Platform=cmd.Platform};
         }
 
         public IEnumerable<Command> GetAllCommands()
@@ -35,6 +33,13 @@ namespace Commander.Data
         public bool SaveChanges()
         {
             return true;
+        }
+
+        public void UpdateCommand(Command cmd)
+        {
+            if(cmd is null || cmd.HowTo is null || 
+            cmd.Line is null || cmd.Platform is null)
+                throw new ArgumentNullException();
         }
     }
 }

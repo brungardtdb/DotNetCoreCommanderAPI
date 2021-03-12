@@ -1,17 +1,10 @@
 using System.ComponentModel.DataAnnotations;
+using Commander.Dtos.AbstractDtos;
 
 namespace Commander.Dtos
 {
-        public class CommandCreateDto
+    public class CommandCreateDto : AbstractCreateDto
     {
-        // Id created by Db, not needed
-
-        [Required] // Cannot be null
-        [MaxLength(50)]
-        public string HowTo {get; set;}
-        [Required]
-        public string Line {get; set;}   
-        [Required]
-        public string Platform {get; set;}     
+  
     }
 }
