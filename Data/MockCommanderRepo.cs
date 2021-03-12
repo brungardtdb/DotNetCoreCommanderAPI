@@ -7,12 +7,19 @@ namespace Commander.Data
     {
         public IEnumerable<Command> GetAllCommands()
         {
-            throw new System.NotImplementedException();
+            var commands = new List<Command> 
+            {
+                new Command{Id=0, HowTo="Become BwO", Line="Be rhizomatic", Platform="A Thousand Plateaus"},
+                new Command{Id=1, HowTo="Long for the other shore", Line="Go Under", Platform="Motley Cow"},
+                new Command{Id=2, HowTo="Struggle toward heights", Line="Imagine Sisyphus happy", Platform="The Myth of Sisyphus"}
+            };
+
+            return commands;
         }
 
         public Command GetCommandById(int id)
         {
-            throw new System.NotImplementedException();
+            return new Command{Id=0, HowTo="Become BwO", Line="Be rhizomatic", Platform="A Thousand Plateaus"};
         }
     }
 }
