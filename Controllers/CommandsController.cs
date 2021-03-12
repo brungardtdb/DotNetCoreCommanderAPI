@@ -26,6 +26,8 @@ namespace Commander.Controllers
         public ActionResult <IEnumerable<CommandReadDto>> GetAllCommands()
         {
             var commandItems = _repository.GetAllCommands();
+            if(commandItems is null)
+                return NotFound();
             return Ok(_mapper.Map<IEnumerable<CommandReadDto>>(commandItems)); // Return OK 200 success
         }
 
@@ -43,10 +45,6 @@ namespace Commander.Controllers
         [HttpPost]
         public ActionResult<CommandReadDto> CreateCommand(CommandCreateDto commandCreateDto)
         {
-            if(commandCreateDto is null || commandCreateDto.HowTo is null ||
-            commandCreateDto.Line is null || commandCreateDto.Platform is null)
-                return BadRequest();
-
             var commandModel =_mapper.Map<Command>(commandCreateDto);
             _repository.CreateCommand(commandModel);
 
