@@ -32,9 +32,10 @@ namespace Commander
             (Configuration.GetConnectionString("CommanderConnection")));
 
             services.AddControllers();
+            
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             // Inject dependencies using interface.
-            //services.AddScoped<ICommanderRepo, MockCommanderRepo>();
             services.AddScoped<ICommanderRepo, SqlCommanderRepo>();
         }
 
