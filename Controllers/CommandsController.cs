@@ -26,10 +26,12 @@ namespace Commander.Controllers
         }
 
         //GET api/commands/{id}
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public ActionResult <Command> GetCommandById(int id)
         {
-            var commandItem = _repository.GetCommandById(1);
+            var commandItem = _repository.GetCommandById(id);
+            if(commandItem is null)
+                return NotFound(); // 404 No command was found
             return Ok(commandItem); // Return OK 200 success
         }
     }
